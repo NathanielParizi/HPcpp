@@ -46,6 +46,24 @@ int main() {
 	cat.jump();
 	schrodingersCat.qubits();
 
+	schrodingersCat.alive = false;
+	schrodingersCat.speak();
+
+	cout << endl << "opening the box! " << endl;
+	schrodingersCat.openBox();
+
+	if (schrodingersCat.alive) {
+
+		cout << "Schordinger's cat is alive: " << schrodingersCat.alive << endl;
+	}
+
+	schrodingersCat.openBox();
+
+
+	cout << endl << "**************" << endl;
+	Cat felix;
+	felix.speak();
+
 	return 0;
 }
 
