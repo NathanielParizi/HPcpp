@@ -24,35 +24,39 @@
 //They are statements to separate software that runs called the preprocessor which will run
 //before compilation (transformation of text file into binary code).
 
-
-
 using namespace std;
-
 
 //void Run(); // This is the prototype (returns void)
 
 void learn();  //prototype
 
-int main(){
+int main() {
 
 	run();
 	run();
 
 	learn();
 
-	speak();
+	Cat cat;
+	Cat schrodingersCat;
+
+	cout << "****************" << endl;
+
+	cat.speak();
+	cat.jump();
+	schrodingersCat.qubits();
 
 	return 0;
 }
 
 //C++ prototypes
 
-void run(){
+void run() {
 
 	cout << "Running" << endl;
 }
 
-void learn(){
+void learn() {
 
 	cout << "Learning" << endl;
 

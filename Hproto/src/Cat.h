@@ -8,8 +8,13 @@
 #ifndef CAT_H_
 #define CAT_H_
 
-void speak();
+class Cat {
 
+public:
+	void speak();
+	void jump();
+	void qubits();
 
+};
 
 #endif /* CAT_H_ */
