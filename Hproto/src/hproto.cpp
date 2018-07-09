@@ -29,6 +29,7 @@ using namespace std;
 //void Run(); // This is the prototype (returns void)
 
 void learn();  //prototype
+bool coolCat(); //prototype
 
 int main() {
 
@@ -41,6 +42,14 @@ int main() {
 	Cat schrodingersCat;
 
 	cout << "****************" << endl;
+
+	//outside scope example. this cat object is isolated within this code block
+	{
+		Cat kiki;
+		kiki.jump();
+	}
+	//kiki.speak(); // and can't recognize outside of this code block's scope
+
 
 	cat.speak();
 	cat.jump();
@@ -59,15 +68,25 @@ int main() {
 
 	schrodingersCat.openBox();
 
-
 	cout << endl << "**************" << endl;
 	Cat felix;
 	felix.speak();
+	felix.cool = coolCat();
+	cout << "Is Felix a cool cat? " << endl;
+	if (felix.cool) {
+		cout << "Yes he is " << felix.cool << " cool cat." << endl;
+	}
 
 	return 0;
 }
 
-//C++ prototypes
+//C++ functions
+
+bool coolCat() {
+
+	return true;
+
+}
 
 void run() {
 

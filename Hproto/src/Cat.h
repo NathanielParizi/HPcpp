@@ -12,8 +12,10 @@ class Cat {
 //instance variables
 private:
 	bool box = true;
+
 public:
 	bool alive;
+	bool cool = false;
 
 	Cat();   //constructors don't have a return type
 
